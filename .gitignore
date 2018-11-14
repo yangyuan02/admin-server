@@ -1,0 +1,11 @@
+/node_modules
+.DS_Store
+build/
+build.zip
+npm-debug.log*
+*.log
+
+.idea
+.gitee
+.vscode
+*.swp
