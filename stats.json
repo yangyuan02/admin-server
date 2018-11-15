@@ -3,7 +3,7 @@
   "warnings": [],
   "version": "3.12.0",
   "hash": "a6cb79a81a79ea7add7c",
-  "time": 2563,
+  "time": 2479,
   "publicPath": "",
   "assetsByChunkName": {
     "main": "js/main-a6cb79a81a79ea7add7c.dev.js"
@@ -75,8 +75,8 @@
           "issuerId": 7,
           "issuerName": "./node_modules/css-loader??ref--1-1!./node_modules/postcss-loader/lib??ref--1-2!./node_modules/less-loader/dist/cjs.js?sourceMap!./src/css/style.less",
           "profile": {
-            "factory": 10,
-            "building": 4
+            "factory": 13,
+            "building": 184
           },
           "failed": false,
           "errors": 0,
@@ -126,8 +126,8 @@
           "issuerId": 3,
           "issuerName": "./src/css/common.css",
           "profile": {
-            "factory": 982,
-            "building": 40
+            "factory": 865,
+            "building": 18
           },
           "failed": false,
           "errors": 0,
@@ -177,8 +177,8 @@
           "issuerId": null,
           "issuerName": null,
           "profile": {
-            "factory": 46,
-            "building": 793
+            "factory": 49,
+            "building": 771
           },
           "failed": false,
           "errors": 0,
@@ -209,8 +209,8 @@
           "issuerId": 2,
           "issuerName": "./src/main.js",
           "profile": {
-            "factory": 8,
-            "building": 70
+            "factory": 10,
+            "building": 83
           },
           "failed": false,
           "errors": 0,
@@ -251,9 +251,9 @@
           "issuerId": 3,
           "issuerName": "./src/css/common.css",
           "profile": {
-            "factory": 11,
-            "building": 1563,
-            "dependencies": 1
+            "factory": 12,
+            "building": 1306,
+            "dependencies": 5
           },
           "failed": false,
           "errors": 0,
@@ -294,8 +294,8 @@
           "issuerId": 1,
           "issuerName": "./node_modules/style-loader/lib/addStyles.js",
           "profile": {
-            "factory": 2,
-            "building": 2
+            "factory": 1,
+            "building": 4
           },
           "failed": false,
           "errors": 0,
@@ -336,9 +336,9 @@
           "issuerId": 2,
           "issuerName": "./src/main.js",
           "profile": {
-            "factory": 79,
-            "building": 9,
-            "dependencies": 972
+            "factory": 94,
+            "building": 8,
+            "dependencies": 857
           },
           "failed": false,
           "errors": 0,
@@ -379,8 +379,8 @@
           "issuerId": 6,
           "issuerName": "./src/css/style.less",
           "profile": {
-            "factory": 833,
-            "building": 722
+            "factory": 675,
+            "building": 626
           },
           "failed": false,
           "errors": 0,
@@ -437,8 +437,8 @@
       "issuerId": 7,
       "issuerName": "./node_modules/css-loader??ref--1-1!./node_modules/postcss-loader/lib??ref--1-2!./node_modules/less-loader/dist/cjs.js?sourceMap!./src/css/style.less",
       "profile": {
-        "factory": 10,
-        "building": 4
+        "factory": 13,
+        "building": 184
       },
       "failed": false,
       "errors": 0,
@@ -488,8 +488,8 @@
       "issuerId": 3,
       "issuerName": "./src/css/common.css",
       "profile": {
-        "factory": 982,
-        "building": 40
+        "factory": 865,
+        "building": 18
       },
       "failed": false,
       "errors": 0,
@@ -539,8 +539,8 @@
       "issuerId": null,
       "issuerName": null,
       "profile": {
-        "factory": 46,
-        "building": 793
+        "factory": 49,
+        "building": 771
       },
       "failed": false,
       "errors": 0,
@@ -571,8 +571,8 @@
       "issuerId": 2,
       "issuerName": "./src/main.js",
       "profile": {
-        "factory": 8,
-        "building": 70
+        "factory": 10,
+        "building": 83
       },
       "failed": false,
       "errors": 0,
@@ -613,9 +613,9 @@
       "issuerId": 3,
       "issuerName": "./src/css/common.css",
       "profile": {
-        "factory": 11,
-        "building": 1563,
-        "dependencies": 1
+        "factory": 12,
+        "building": 1306,
+        "dependencies": 5
       },
       "failed": false,
       "errors": 0,
@@ -656,8 +656,8 @@
       "issuerId": 1,
       "issuerName": "./node_modules/style-loader/lib/addStyles.js",
       "profile": {
-        "factory": 2,
-        "building": 2
+        "factory": 1,
+        "building": 4
       },
       "failed": false,
       "errors": 0,
@@ -698,9 +698,9 @@
       "issuerId": 2,
       "issuerName": "./src/main.js",
       "profile": {
-        "factory": 79,
-        "building": 9,
-        "dependencies": 972
+        "factory": 94,
+        "building": 8,
+        "dependencies": 857
       },
       "failed": false,
       "errors": 0,
@@ -741,8 +741,8 @@
       "issuerId": 6,
       "issuerName": "./src/css/style.less",
       "profile": {
-        "factory": 833,
-        "building": 722
+        "factory": 675,
+        "building": 626
       },
       "failed": false,
       "errors": 0,
@@ -827,8 +827,8 @@
               "issuerId": null,
               "issuerName": null,
               "profile": {
-                "factory": 28,
-                "building": 19
+                "factory": 29,
+                "building": 20
               },
               "failed": false,
               "errors": 0,
@@ -859,8 +859,8 @@
               "issuerId": 0,
               "issuerName": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
               "profile": {
-                "factory": 3,
-                "building": 2065
+                "factory": 776,
+                "building": 1595
               },
               "failed": false,
               "errors": 0,
@@ -901,8 +901,8 @@
               "issuerId": 1,
               "issuerName": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 382,
-                "building": 6
+                "factory": 3,
+                "building": 3
               },
               "failed": false,
               "errors": 0,
@@ -943,7 +943,7 @@
               "issuerId": 1,
               "issuerName": "./node_modules/lodash/lodash.js",
               "profile": {
-                "factory": 382,
+                "factory": 3,
                 "building": 3
               },
               "failed": false,
@@ -1000,8 +1000,8 @@
           "issuerId": null,
           "issuerName": null,
           "profile": {
-            "factory": 28,
-            "building": 19
+            "factory": 29,
+            "building": 20
           },
           "failed": false,
           "errors": 0,
@@ -1032,8 +1032,8 @@
           "issuerId": 0,
           "issuerName": "./node_modules/html-webpack-plugin/lib/loader.js!./index.html",
           "profile": {
-            "factory": 3,
-            "building": 2065
+            "factory": 776,
+            "building": 1595
           },
           "failed": false,
           "errors": 0,
@@ -1074,8 +1074,8 @@
           "issuerId": 1,
           "issuerName": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 382,
-            "building": 6
+            "factory": 3,
+            "building": 3
           },
           "failed": false,
           "errors": 0,
@@ -1116,7 +1116,7 @@
           "issuerId": 1,
           "issuerName": "./node_modules/lodash/lodash.js",
           "profile": {
-            "factory": 382,
+            "factory": 3,
             "building": 3
           },
           "failed": false,
