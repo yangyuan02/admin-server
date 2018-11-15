@@ -1,7 +1,7 @@
 /node_modules
 .DS_Store
 build/
-dist/
+/dist
 build.zip
 npm-debug.log*
 *.log
