@@ -2,17 +2,17 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-15 15:14:45
+ * @LastEditTime: 2018-11-15 23:06:42
  */
 const path = require("path");
 const webpack = require("webpack")
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');//打包进度条
 const HtmlWebpackPlugin = require('html-webpack-plugin')//动态设置index.html引用
 const CleanWebpackPlugin = require('clean-webpack-plugin')//清楚打包重复文件
-const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')//操作系统之间的大小写问题;
+const merge = require('webpack-merge');
+const commonConfig = require('./webpack.config.common.js');
 
-
-module.exports = {
+const config = {
     entry:path.resolve(__dirname,'./src/main.js'),//入口
     output:{
         path:path.resolve(__dirname,'./dist'),
@@ -72,14 +72,27 @@ module.exports = {
                     }
                 ],
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.(gif|jpg|png|svg|woff|woff2|eot|ttf)(\?[^?]*)?$/,
+                // loader: 'url-loader?name=static/[name].[hash].[ext]&limit=1000000',
+                loader: {
+                  loader: 'url-loader',
+                  options: {
+                    name: 'static/[name].[hash].[ext]',
+                    limit: 1000,
+                  },
+                },
+            },
         ]
     },
     plugins: [
         new ProgressBarPlugin({ format: ' webpack 构建中 [:bar] :percent :msg' }),
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({template:'index.html',filename:'index.html'}),
-        new CleanWebpackPlugin(['dist'],{root:__dirname,verbose:true,dry:false}),
-        new CaseSensitivePathsPlugin()
-    ]
+        new CleanWebpackPlugin(['dist'],{root:__dirname,verbose:true,dry:false})
+    ],
+    devtool: 'eval',//生成source-map级别
 }
+
+module.exports = merge(commonConfig,config)
