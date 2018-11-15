@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-15 14:01:36
+ * @LastEditTime: 2018-11-15 14:28:24
  */
 const path = require("path");
 const webpack = require("webpack")
@@ -29,12 +29,12 @@ module.exports = {
                         loader:'css-loader',
                         options:{
                             importLoaders: 1,//importLoaders解决由于css-loader处理文件导入的方式导致postcss-loader不能正常使用的问题
-                            // options: 'sourceMap',
+                            options: 'sourceMap',
                         }
                     },
                     {
                         loader: 'postcss-loader',
-                        // options: { sourceMap: true },
+                        options: { sourceMap: true },
                     }
                 ],
                 exclude:'/node_modules/'//排除node_modules资源检查
@@ -49,18 +49,27 @@ module.exports = {
                         loader:'css-loader',
                         options:{
                             importLoaders: 1,//importLoaders解决由于css-loader处理文件导入的方式导致postcss-loader不能正常使用的问题
-                            // options: 'sourceMap'
+                            options: 'sourceMap'
                         }
                     },
                     {
                         loader: 'postcss-loader',
-                        // options: { sourceMap: true },
+                        options: { sourceMap: true },
                     },
                     {
                         loader: 'less-loader',
-                        // options: 'sourceMap',
+                        options: 'sourceMap',
                     }
                 ]
+            },
+            {
+                test: /\.js$/,
+                use:[
+                    {
+                        loader: 'babel-loader',
+                    }
+                ],
+                exclude: /node_modules/
             }
         ]
     },
