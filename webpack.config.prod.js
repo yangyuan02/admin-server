@@ -2,9 +2,10 @@
  * @Author: yangyuan
  * @Date: 2018-11-15 22:31:16
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-15 23:07:13
+ * @LastEditTime: 2018-11-15 23:27:13
  */
 'use strict'
+const path = require('path')
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');//压缩js
@@ -12,6 +13,11 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');//
 const commonConfig = require('./webpack.config.common.js');
 
 const config = {
+    output:{
+        path:path.resolve(__dirname,'./dist'),
+        filename: 'js/[name]-[chunkhash].entry.js',
+        chunkFilename: 'js/[name]-[chunkhash].chunk.js',
+    },
     plugins:[
         new webpack.DefinePlugin({
             'process.env': {

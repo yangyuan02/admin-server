@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-15 23:06:42
+ * @LastEditTime: 2018-11-15 23:19:31
  */
 const path = require("path");
 const webpack = require("webpack")
@@ -13,7 +13,6 @@ const merge = require('webpack-merge');
 const commonConfig = require('./webpack.config.common.js');
 
 const config = {
-    entry:path.resolve(__dirname,'./src/main.js'),//入口
     output:{
         path:path.resolve(__dirname,'./dist'),
         filename: 'js/[name]-[hash].dev.js',

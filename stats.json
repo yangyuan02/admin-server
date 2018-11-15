@@ -1,0 +1,21 @@
+
+Webpack is watching the files…
+
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "d0d4d82d95c49680957b",
+  "time": 2285,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-d0d4d82d95c49680957b.dev.js"
+      ]
+    }
+  }
+}
