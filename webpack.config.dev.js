@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-19 22:10:28
+ * @LastEditTime: 2018-11-19 23:01:54
  */
 const path = require("path");
 const webpack = require("webpack")
@@ -89,8 +89,17 @@ const config = {
         new ProgressBarPlugin({ format: ' webpack 构建中 [:bar] :percent :msg' }),
         new webpack.NoEmitOnErrorsPlugin(),
         new HtmlWebpackPlugin({template:'index.html',filename:'index.html'}),
-        new CleanWebpackPlugin(['dist'],{root:__dirname,verbose:true,dry:false})
+        new CleanWebpackPlugin(['dist'],{root:__dirname,verbose:true,dry:false}),
+        new webpack.HotModuleReplacementPlugin()//devserver热替换需要用到
     ],
+    devServer:{
+      inline:true,
+      hot:true,
+      port:3000,
+      proxy:{
+          "/api":"http://localhost:3000"//请求到 /api/users 现在会被代理到请求 http://localhost:3000/api/users
+      }
+    },
     devtool: 'eval',//生成source-map级别
 }
 
