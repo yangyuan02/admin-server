@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server":"cross-env NODE_ENV=dev node --max-old-space-size=9999 ./node_modules/.bin/webpack-dev-server --config webpack.config.js",
+    "server":"cross-env NODE_ENV=dev node --max-old-space-size=9999 ./node_modules/.bin/webpack-dev-server --inline --hot --config webpack.config.js",
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=dev node --max-old-space-size=9999 ./node_modules/webpack/bin/webpack.js --watch --profile --json > stats.json",
     "build": "cross-env NODE_ENV=prod node --max-old-space-size=9999 ./node_modules/webpack/bin/webpack.js --profile --json > stats.json"
