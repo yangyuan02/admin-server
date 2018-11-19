@@ -6,7 +6,7 @@ Webpack is watching the files…
   "warnings": [],
   "version": "3.12.0",
   "hash": "d0d4d82d95c49680957b",
-  "time": 2285,
+  "time": 3479,
   "publicPath": "",
   "entrypoints": {
     "main": {
@@ -15,6 +15,168 @@ Webpack is watching the files…
       ],
       "assets": [
         "js/main-d0d4d82d95c49680957b.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "83dc45208d67569da8d3",
+  "time": 140,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-83dc45208d67569da8d3.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "068527b0b780f63b984a",
+  "time": 70,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-068527b0b780f63b984a.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "655db3b0ab27e98c87cc",
+  "time": 48,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-655db3b0ab27e98c87cc.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "0404fa963ea6d037ecd4",
+  "time": 58,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-0404fa963ea6d037ecd4.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "655db3b0ab27e98c87cc",
+  "time": 121,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-655db3b0ab27e98c87cc.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "98b4ae20a9a399d69fdc",
+  "time": 49,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-98b4ae20a9a399d69fdc.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "655db3b0ab27e98c87cc",
+  "time": 182,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-655db3b0ab27e98c87cc.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "0404fa963ea6d037ecd4",
+  "time": 36,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-0404fa963ea6d037ecd4.dev.js"
+      ]
+    }
+  }
+}
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.12.0",
+  "hash": "655db3b0ab27e98c87cc",
+  "time": 61,
+  "publicPath": "",
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "js/main-655db3b0ab27e98c87cc.dev.js"
       ]
     }
   }

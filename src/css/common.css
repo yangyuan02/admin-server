@@ -6,4 +6,8 @@ body {
     height: 100%;
     background:url('../img/work.png');
     display: flex;
+    line-height: 120px;
+}
+#app{
+    background: blue;
 }
