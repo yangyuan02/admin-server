@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2018-11-19 23:01:54
+ * @LastEditTime: 2018-11-20 12:16:41
  */
 const path = require("path");
 const webpack = require("webpack")
@@ -96,6 +96,7 @@ const config = {
       inline:true,
       hot:true,
       port:3000,
+      open: true,
       proxy:{
           "/api":"http://localhost:3000"//请求到 /api/users 现在会被代理到请求 http://localhost:3000/api/users
       }
