@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-15 22:24:15
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2019-04-22 20:01:14
+ * @LastEditTime: 2019-04-22 20:36:34
  */
 'use strict';
 const path = require('path');
@@ -21,6 +21,26 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react'] //在react环境下,也可以进行打包
+          }
+        },
+        exclude: /node_modules/
+      },
+      {
+        test: /\.jsx$/,
+        exclude: /(node_modules)/, //对这个不做处理
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react'] //在react环境下,也可以进行打包
+          }
+        }
+      },
       {
         test: /\.css$/, //匹配所有的css
         use: ExtractTextWebpackPlugin.extract({
@@ -69,15 +89,6 @@ const config = {
         })
       },
       {
-        test: /\.js$/,
-        use: [
-          {
-            loader: 'babel-loader'
-          }
-        ],
-        exclude: /node_modules/
-      },
-      {
         test: /\.(gif|jpg|png|svg|woff|woff2|eot|ttf)(\?[^?]*)?$/,
         // loader: 'url-loader?name=static/[name].[hash].[ext]&limit=1000000',
         loader: {
@@ -90,6 +101,11 @@ const config = {
       }
     ]
   },
+  resolve: {
+    //一些别名
+    alias: {},
+    extensions: ['.js', '.jsx', '.jsx.js', '.ts', '.tsx']
+  },
   plugins: [
     new CaseSensitivePathsPlugin(),
     new webpack.optimize.CommonsChunkPlugin({
@@ -98,7 +114,6 @@ const config = {
       minChunks: function(module, count) {
         const isVendor = module.context && module.context.indexOf('node_modules') !== -1;
         const isMultiple = count >= 3;
-        console.log(isVendor + 'isVendor');
         return isVendor || isMultiple;
       }
     }),
@@ -115,13 +130,13 @@ const config = {
     }),
     new HtmlWebpackPlugin({ template: 'index.html', filename: 'index.html' })
   ],
-  // entry: path.resolve(__dirname, './src/main.js') //入口
-  entry: {
-    first: './src/js/first.js',
-    second: './src/js/second.js',
-    third: './src/js/third.js',
-    five: './src/js/five.js'
-  }
+  entry: path.resolve(__dirname, './src/main.js') //入口
+  // entry: {
+  //   first: './src/js/first.js',
+  //   second: './src/js/second.js',
+  //   third: './src/js/third.js',
+  //   five: './src/js/five.js'
+  // }
 };
 
 module.exports = config;
