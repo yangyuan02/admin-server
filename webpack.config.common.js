@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-15 22:24:15
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2019-04-22 16:08:58
+ * @LastEditTime: 2019-04-22 20:01:14
  */
 'use strict';
 const path = require('path');
@@ -103,7 +103,7 @@ const config = {
       }
     }),
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendor',
+      name: 'common',
       filename: '[name].js',
       minChunks: function(module, count) {
         return count >= 3;
