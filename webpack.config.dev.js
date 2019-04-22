@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-14 22:58:32
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2019-04-19 16:01:06
+ * @LastEditTime: 2019-04-22 15:56:46
  */
 const path = require('path');
 const webpack = require('webpack');
@@ -30,7 +30,7 @@ const config = {
       '/api': 'http://localhost:3000' //请求到 /api/users 现在会被代理到请求 http://localhost:3000/api/users
     }
   },
-  devtool: 'eval' //生成source-map级别
+  devtool: 'cheap-module-source-map' //生成source-map级别
 };
 
 module.exports = merge(commonConfig, config);
