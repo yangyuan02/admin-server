@@ -1,5 +1,6 @@
-// app.jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import './css/common.css';
+import { Hello } from './js/hello';
 
-ReactDOM.render(<h1>Hello, world!</h1>, document.getElementById('app'));
+ReactDOM.render(<Hello compiler="TypeScript" framework="React" />, document.getElementById('app'));

@@ -1,63 +1,24 @@
-falseisVendor
-falseisVendor
-trueisVendor
-falseisVendor
-falseisVendor
-falseisVendor
 {
   "errors": [],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "95461862e0e633bccc4d",
-  "time": 2905,
+  "hash": "960fb92a3512187b96ba",
+  "time": 2957,
   "publicPath": "",
   "entrypoints": {
-    "first": {
+    "main": {
       "chunks": [
-        4,
-        3
-      ],
-      "assets": [
-        "vendor.js",
-        "vendor.js.map",
-        "js/first-474ab4a19431a6e61a85.entry.js",
-        "js/first-474ab4a19431a6e61a85.entry.js.map"
-      ]
-    },
-    "second": {
-      "chunks": [
-        4,
+        2,
+        0,
         1
       ],
       "assets": [
+        "common.js",
+        "common.js.map",
         "vendor.js",
         "vendor.js.map",
-        "js/second-fb95c58d079decd62272.entry.js",
-        "js/second-fb95c58d079decd62272.entry.js.map"
-      ]
-    },
-    "third": {
-      "chunks": [
-        4,
-        0
-      ],
-      "assets": [
-        "vendor.js",
-        "vendor.js.map",
-        "js/third-59b7dc550600b3f5cf70.entry.js",
-        "js/third-59b7dc550600b3f5cf70.entry.js.map"
-      ]
-    },
-    "five": {
-      "chunks": [
-        4,
-        2
-      ],
-      "assets": [
-        "vendor.js",
-        "vendor.js.map",
-        "js/five-9d052cbd640457d8c474.entry.js",
-        "js/five-9d052cbd640457d8c474.entry.js.map"
+        "js/main-0de0bef1c0133a79bd47.entry.js",
+        "js/main-0de0bef1c0133a79bd47.entry.js.map"
       ]
     }
   }

@@ -2,7 +2,7 @@
  * @Author: yangyuan
  * @Date: 2018-11-15 22:24:15
  * @Email: 1367511704@qq.com
- * @LastEditTime: 2019-04-22 20:36:34
+ * @LastEditTime: 2019-04-23 11:20:42
  */
 'use strict';
 const path = require('path');
@@ -21,16 +21,7 @@ const config = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env', 'react'] //在react环境下,也可以进行打包
-          }
-        },
-        exclude: /node_modules/
-      },
+      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
       {
         test: /\.jsx$/,
         exclude: /(node_modules)/, //对这个不做处理
@@ -41,6 +32,17 @@ const config = {
           }
         }
       },
+      {
+        test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react'] //在react环境下,也可以进行打包
+          }
+        },
+        exclude: /node_modules/
+      },
+      { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
       {
         test: /\.css$/, //匹配所有的css
         use: ExtractTextWebpackPlugin.extract({
