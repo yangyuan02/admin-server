@@ -1,9 +1,18 @@
+
+[at-loader] Using typescript@3.4.4 from typescript and "tsconfig.json" from /Users/yangyuan/Desktop/admin-server/tsconfig.json.
+
+
+[at-loader] Checking started in a separate process...
+
+[at-loader] Ok, 3.128 sec.
 {
-  "errors": [],
+  "errors": [
+    "js/main-2f7da86f5debe71bf469.entry.js from UglifyJs\nUnexpected token: operator (>) [./src/js/hello.tsx:8,41][js/main-2f7da86f5debe71bf469.entry.js:17,25]"
+  ],
   "warnings": [],
   "version": "3.12.0",
-  "hash": "960fb92a3512187b96ba",
-  "time": 2957,
+  "hash": "ff524f99907853aba2dc",
+  "time": 9721,
   "publicPath": "",
   "entrypoints": {
     "main": {
@@ -17,9 +26,11 @@
         "common.js.map",
         "vendor.js",
         "vendor.js.map",
-        "js/main-0de0bef1c0133a79bd47.entry.js",
-        "js/main-0de0bef1c0133a79bd47.entry.js.map"
-      ]
+        "js/main-2f7da86f5debe71bf469.entry.js",
+        "main.min.css",
+        "js/main-2f7da86f5debe71bf469.entry.js.map"
+      ],
+      "isOverSizeLimit": true
     }
   }
 }

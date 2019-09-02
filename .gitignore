@@ -11,3 +11,4 @@ stats.json
 .gitee
 .vscode
 *.swp
+.stats.json
